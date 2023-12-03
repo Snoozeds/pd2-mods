@@ -1,0 +1,21 @@
+{
+  "name": "Cumulative Unrecoverable Mortality (CUM)",
+  "description": "Perma health damage/disables healing.",
+  "author": "Snoozeds",
+  "version": "1.0",
+  "image": "mod.png",
+  "hooks": [
+    {
+      "hook_id": "lib/units/beings/player/playerdamage",
+      "script_path": "lua/playerdamage.lua"
+    },
+    {
+      "hook_id": "lib/units/beings/player/playerinventory",
+      "script_path": "lua/hacker.lua"
+    },
+    {
+      "hook_id": "lib/player_actions/skills/playeractiontagteam",
+      "script_path": "lua/tagteam.lua"
+    }
+  ]
+}
